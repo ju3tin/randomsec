@@ -9,6 +9,12 @@ const app = express();
 // Middleware to parse JSON
 app.use(express.json());
 
+
+const connectDB = require("./connectMongo");
+
+connectDB();
+
+
 // ** API 1: Needs Access Token and CORS **
 // CORS configuration: Allow requests only from your specific URL
 const allowedOrigin = process.env.ALLOWED_ORIGIN;
