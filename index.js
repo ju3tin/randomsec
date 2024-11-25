@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require("./connectMongo");
+const connectDB = require("connectMongo");
 
 //const mongoose = require('mongoose');
 
@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 
-//connectDB();
+connectDB();
 
 
 // ** API 1: Needs Access Token and CORS **
