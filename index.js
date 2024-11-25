@@ -43,6 +43,10 @@ app.get('/open-api/random-time', (req, res) => {
     res.json({ randomTime });
 });
 
+app.get('/', (req, res) => {
+    const randomTime = generateRandomTime();
+    res.json({ "message":"hello world" });
+});
 // Random time generator function
 function generateRandomTime() {
     const randomMilliseconds = Math.random() * (5999 - 10 + 1) + 10; // 10ms to 5999ms
