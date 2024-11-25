@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 
-//connectDB();
+connectDB();
 
 
 // ** API 1: Needs Access Token and CORS **
