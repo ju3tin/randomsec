@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require("connectMongo");
+const connectDB = require("./connectMongo");
 
 //const mongoose = require('mongoose');
 
