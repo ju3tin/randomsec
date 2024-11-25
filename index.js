@@ -10,9 +10,9 @@ const app = express();
 app.use(express.json());
 
 
-const connectDB = require("./connectMongo");
+//const connectDB = require("./connectMongo");
 
-connectDB();
+//connectDB();
 
 
 // ** API 1: Needs Access Token and CORS **
