@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const connectDB = require("./connectMongo");
+
 //const mongoose = require('mongoose');
 
 require('dotenv').config();
@@ -10,7 +12,6 @@ const app = express();
 app.use(express.json());
 
 
-//const connectDB = require("./connectMongo");
 
 //connectDB();
 
