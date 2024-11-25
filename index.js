@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
+
 require('dotenv').config();
 
 const app = express();
@@ -11,10 +11,6 @@ app.use(express.json());
 // ** API 1: Needs Access Token and CORS **
 // CORS configuration: Allow requests only from your specific URL
 const allowedOrigin = process.env.ALLOWED_ORIGIN;
-
-
-
-
 app.use('/secure-api', cors({
     origin: (origin, callback) => {
         if (!origin || origin === allowedOrigin) {
