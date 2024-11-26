@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import connectDB from './connectMongo.js'; // Import connectDB
+//import connectDB from './connectMongo.js'; // Import connectDB
 
 //const connectDB = require("./connectMongo");
 
@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 
-connectDB();
+//connectDB();
 
 
 // ** API 1: Needs Access Token and CORS **
