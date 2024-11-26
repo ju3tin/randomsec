@@ -1,7 +1,5 @@
-import express from 'express';
-import cors from 'cors';
-//import connectDB from './connectMongo.js'; // Import connectDB
-
+const express = require('express');
+const cors = require('cors');
 //const connectDB = require("./connectMongo");
 
 //const mongoose = require('mongoose');
